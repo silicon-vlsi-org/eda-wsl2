@@ -18,6 +18,6 @@ wsl --install
 - To **uninstall** WSL, see [Uninstall legacy version of WSL](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#uninstall-legacy-version-of-wsl) or [unregister or uninstall a Linux distribution](https://learn.microsoft.com/en-us/windows/wsl/basic-commands#unregister-or-uninstall-a-linux-distribution).
 - Once installed, create **User Name** and **Password**:
   - This account will be your default user for the distribution and automatically sign-in on launch.
-  - This account will be considered the Linux administrator, with the ability to run `sudo` (Super User Do) administrative commands.
+  - This account will be considered the Linux administrator, with the ability to run *sudo* (Super User Do) administrative commands.
 - See [Best practices for setting up a WSL development environment](https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password) guide for a step-by-step walk-through of how to set up a user name and password for your installed Linux distribution(s), using basic WSL commands, installing and customizing Windows Terminal, set up for Git version control, code editing and debugging using the VS Code remote server, good practices for file storage, setting up a database, mounting an external drive, setting up GPU acceleration, and more.
   - 
