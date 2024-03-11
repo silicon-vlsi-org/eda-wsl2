@@ -12,4 +12,10 @@ In this page we will share instructions for installing WSL2 on Winodws 10/11 and
 wsl --install
 ```
 - This command will enable the features necessary to run WSL and install the Ubuntu distribution (or other available distro) of Linux.
+- **`NOTE`**: The above commands are for **first time** install.
+  - `wsl -- list --online` for all available distros.
+  - `wsl --install -d <DistroName>` To change the default Linux distro installed.
+- To **uninstall** WSL, see [Uninstall legacy version of WSL](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#uninstall-legacy-version-of-wsl) or [unregister or uninstall a Linux distribution](https://learn.microsoft.com/en-us/windows/wsl/basic-commands#unregister-or-uninstall-a-linux-distribution).
+- Once installed, create user account and password.
+- See [Best practices for setting up a WSL development environment](https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password) guide for a step-by-step walk-through of how to set up a user name and password for your installed Linux distribution(s), using basic WSL commands, installing and customizing Windows Terminal, set up for Git version control, code editing and debugging using the VS Code remote server, good practices for file storage, setting up a database, mounting an external drive, setting up GPU acceleration, and more.
 - 
