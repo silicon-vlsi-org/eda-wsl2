@@ -19,6 +19,20 @@ wsl --install
 - Once installed, create **User Name** and **Password**:
   - This account will be your default user for the distribution and automatically sign-in on launch.
   - This account will be considered the Linux administrator, with the ability to run *sudo* (Super User Do) administrative commands.
-- See [Best practices for setting up a WSL development environment](https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password)
-- guide for a step-by-step walk-through of how to set up a user name and password for your installed Linux distribution(s), using basic WSL commands, installing and customizing Windows Terminal, set up for Git version control, code editing and debugging using the VS Code remote server, good practices for file storage, setting up a database, mounting an external drive, setting up GPU acceleration, and more.
-  -  
+  - To change or reset your password, open the Linux distribution and enter the command: `passwd`.
+  - If you forgot the password for your Linux distribution execute `wsl -u root` in a PowerShell.
+    - If If you need to update the forgotten password on a distribution that is not your default, use the command: `wsl -d <DistroName> -u root`
+- See [Best practices for setting up a WSL development environment](https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password) guide for a step-by-step walk-through of how to set up a user name and password for your installed Linux distribution(s), using basic WSL commands, installing and customizing Windows Terminal, set up for Git version control, code editing and debugging using the VS Code remote server, good practices for file storage, setting up a database, mounting an external drive, setting up GPU acceleration, and more.
+- Execute `sudo apt update && sudo apt upgrade` to upgrade packages.
+- **Set up Windows Terminal**: Although optional, highly recommended for include multiple tabs, panes, Unicode and UTF-8 character support, a GPU accelerated text rendering engine, and the ability to create your own themes and customize text, colors, backgrounds, and shortcuts.
+  - Install [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/get-started) from the Microsoft Store.
+  - [Use the Command Palette](https://learn.microsoft.com/en-us/windows/terminal/get-started#invoke-the-command-palette)
+- **GUI Apps** is natively supported on WSL2 **Winodws 10 version 2004+ (Build 19041+)** or **Windows 11**. You can checkout this [Tutorial](https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps) for more info.
+  - **TROUBLESHOOTING GUI PROBLEM**: If you find Linux GUI apps are distored and moving the pane makes it go away, disable the GPU accleration by adding a file (if it doesn't exit) to the location `C:\Users\<User>\.wslgconfig` and add the following content:
+
+```bash
+[system-distro-env]
+;disable GPU in system-distro
+LIBGL_ALWAYS_SOFTWARE=1
+```
+
