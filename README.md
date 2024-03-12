@@ -7,7 +7,7 @@ In this page we will share instructions for installing WSL2 on Winodws 10/11 and
 **Table of Content**
 - [Install WSL](#install-wsl)
 - [Install Open Source EDA Tools](#install-open-source-eda-tools)
-- 
+  
 ## Install WSL
 - For detail steps, follow these [instructions](https://learn.microsoft.com/en-us/windows/wsl/install) at [https://learn.microsoft.com](https://learn.microsoft.com/en-us/windows/wsl)
 - **Prerequisites**: Winodws 10 version 2004+ (Build 19041+) or Windows 11
@@ -60,4 +60,4 @@ Once the WSL is setup, we are now ready to install the open source EDA tools. Al
 - [**NETGEN**](https://github.com/silicon-vlsi-org/eda-netgen): See Download and Setup instruction in the [gitHub page](https://github.com/silicon-vlsi-org/eda-netgen#downloading-&-setting-up-netgen)
 - [**TECHNOLOGY**](https://github.com/silicon-vlsi-org/eda-technology): See Download and Setup instruction in the [gitHub page](https://github.com/silicon-vlsi-org/eda-technology)
 
-  - 
+
