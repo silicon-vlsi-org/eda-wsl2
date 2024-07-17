@@ -12,7 +12,7 @@ In this page we will share instructions for installing WSL2 on Winodws 10/11 and
 - It is also **highly recommended** to ensure **Virtualization (VTx)** is enabled in your BIOS. See [instructions here](https://www.laptopmag.com/articles/access-bios-windows-10) on how to access BIOS in a modern Windows 10 workstation/laptop. 
 - Open PowerShell or Windows Command Prompt in **ADMINISTRATOR** mode by right-clicking and selecting "Run as administrator"
 - In the PowerShell type `wsl --list --online`
-  - This will list all the available distributions online. To install a particular _Linux Distribution (also known as Distro)_
+  - This will list all the available distributions online. 
 - To install a particular distribution (Distro) say `Ubuntu-22.04` (The name has to be exactly as printed in the above command):
   - `wsl --install -d Ubuntu-22.04`
   - You'll be asked to create an **username** and **password**. Keep the password safe which you need for all _root_ activities.
