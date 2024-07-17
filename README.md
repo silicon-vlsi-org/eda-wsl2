@@ -7,7 +7,7 @@ In this page we will share instructions for installing WSL2 on Winodws 10/11 and
 ## Install WSL
 - For detail steps, follow these [instructions](https://learn.microsoft.com/en-us/windows/wsl/install) at [https://learn.microsoft.com](https://learn.microsoft.com/en-us/windows/wsl)
 - **Prerequisites**: Winodws 10 version 2004+ (Build 19041+) or Windows 11
-- If you have a previous WSL installed without your knowledge or, you've installed in from the _Microsoft Store_, it's best you **uninstall** it using the Windows "Add/remove Programs" app.
+- If you have a previous WSL installed without your knowledge or, you've installed in from the _Microsoft Store_, it's best you **uninstall** it using the Windows "Add/remove Programs" app and/or `wsl --uninstall`
   - Some resources to [Uninstall legacy version of WSL](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#uninstall-legacy-version-of-wsl) or [unregister or uninstall a Linux distribution](https://learn.microsoft.com/en-us/windows/wsl/basic-commands#unregister-or-uninstall-a-linux-distribution).
 - It is also **highly recommended** to ensure **Virtualization (VTx)** is enabled in your BIOS. See [instructions here](https://www.laptopmag.com/articles/access-bios-windows-10) on how to access BIOS in a modern Windows 10 workstation/laptop. 
 - Open PowerShell or Windows Command Prompt in **ADMINISTRATOR** mode by right-clicking and selecting "Run as administrator"
@@ -23,6 +23,9 @@ In this page we will share instructions for installing WSL2 on Winodws 10/11 and
       - If If you need to update the forgotten password on a distribution that is not your default, use the command: `wsl -d <DistroName> -u root`
     - See [Best practices for setting up a WSL development environment](https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password) guide for a step-by-step walk-through of how to set up a user name and password for your installed Linux distribution(s), using basic WSL commands, installing and customizing Windows Terminal, set up for Git version control, code editing and debugging using the VS Code remote server, good practices for file storage, setting up a database, mounting an external drive, setting up GPU acceleration, and more.
   - **NOTE** You can install multiple Distros using the above command.
+- It's important to update the WSL now by typing the following in the Powershell:
+  - `wsl --update`
+- And shut it down: `wsl --shutdown`. Note: it will automatically start when the WSL distro selected from the Windows menu.
 - Once the installation is complete, the Linux distro will be available using the **Windows Start** under the name of the distro eg. `Ubuntu 22.04`. It's good idea to pin the application to Start or Desktop for ease of access.  
 - When you access your linux terminal for the first time, make sure you update the distro:
   - `sudo apt update && sudo apt upgrade` to upgrade packages. It's a good idea to do this regularly.
