@@ -1,25 +1,24 @@
 # Windows Subsystem for Linux (WSL) for Open Source EDA tools
 
-Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting. With native X11 support on WSL2, the latest WSL, in **Winodws 10 version 2004+ (Build 19041+)** or **Windows 11**, you can now run GUI apps including all the open-source EDA tools like **Sue2, ngspice, Magic, netgen**, and **iverilog**.
+Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting. With native X11 (graphics) support on WSL2, the latest WSL, in **Winodws 10 version 2004+ (Build 19041+)** or **Windows 11**, you can now run GUI apps including all the open-source EDA tools like **Sue2/xschem, ngspice, Magic, netgen**, and **iverilog**.
 
 In this page we will share instructions for installing WSL2 on Winodws 10/11 and install the EDA tools on a **Ubuntu 22.04** distribution.
-
-**Table of Content**
-- [Install WSL](#install-wsl)
-- [Install Open Source EDA Tools](#install-open-source-eda-tools)
   
 ## Install WSL
 - For detail steps, follow these [instructions](https://learn.microsoft.com/en-us/windows/wsl/install) at [https://learn.microsoft.com](https://learn.microsoft.com/en-us/windows/wsl)
 - **Prerequisites**: Winodws 10 version 2004+ (Build 19041+) or Windows 11
-- Open PowerShell or Windows Command Prompt in **administrator** mode by right-clicking and selecting "Run as administrator", enter the `wsl --install` command, then **restart your machine**.
-```PowerShell
-wsl --install
-```
-- This command will enable the features necessary to run WSL and install the Ubuntu distribution (or other available distro) of Linux.
-- **`NOTE`**: The above commands are for **first time** install.
-  - `wsl -- list --online` for all available distros.
-  - `wsl --install -d <DistroName>` To change the default Linux distro installed.
-- To **uninstall** WSL, see [Uninstall legacy version of WSL](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#uninstall-legacy-version-of-wsl) or [unregister or uninstall a Linux distribution](https://learn.microsoft.com/en-us/windows/wsl/basic-commands#unregister-or-uninstall-a-linux-distribution).
+- If you have a previous WSL installed without your knowledge or, you've installed in from the _Microsoft Store_, it's best you **uninstall** it using the Windows "Add/remove Programs" app.
+  - Some resources to [Uninstall legacy version of WSL](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#uninstall-legacy-version-of-wsl) or [unregister or uninstall a Linux distribution](https://learn.microsoft.com/en-us/windows/wsl/basic-commands#unregister-or-uninstall-a-linux-distribution).
+- It is also **highly recommended** to boot into your BIOS 
+- Open PowerShell or Windows Command Prompt in **ADMINISTRATOR** mode by right-clicking and selecting "Run as administrator"
+- In the PowerShell type `wsl --list --online`
+  - This will list all the available distributions online. To install a particular _Linux Distribution (also known as Distro)_
+- To install a particular distribution (Distro) say `Ubuntu-22.04` (The name has to be exactly as printed in the above command):
+  - `wsl --install -d Ubuntu-22.04`
+  - You'll be asked to create an username and password. Keep the password safe which you need for all _root_ activities.
+  - **NOTE** You can install multiple Distros using the above command.
+- Once the installation is complete, the Linux distro will be available using the **Windows Start** under the name of the distro eg. `Ubuntu 22.04`. It's good idea to pin the application to Start or Desktop for ease of access.
+- 
 - Once installed, create **User Name** and **Password**:
   - This account will be your default user for the distribution and automatically sign-in on launch.
   - This account will be considered the Linux administrator, with the ability to run *sudo* (Super User Do) administrative commands.
