@@ -25,7 +25,7 @@ In this page we will share instructions for installing WSL2 on Winodws 10/11 and
   - **NOTE** You can install multiple Distros using the above command.
 - Once the installation is complete, the Linux distro will be available using the **Windows Start** under the name of the distro eg. `Ubuntu 22.04`. It's good idea to pin the application to Start or Desktop for ease of access.  
 - When you access your linux terminal for the first time, make sure you update the distro:
-  - `sudo apt update && sudo apt upgrade` to upgrade packages.
+  - `sudo apt update && sudo apt upgrade` to upgrade packages. It's a good idea to do this regularly.
 - **Setting up Windows Terminal (optional)**: Although optional, highly recommended for include multiple tabs, panes, Unicode and UTF-8 character support, a GPU accelerated text rendering engine, and the ability to create your own themes and customize text, colors, backgrounds, and shortcuts.
   - Install [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/get-started) from the Microsoft Store.
   - [Use the Command Palette](https://learn.microsoft.com/en-us/windows/terminal/get-started#invoke-the-command-palette)
