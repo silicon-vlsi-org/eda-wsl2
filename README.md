@@ -9,7 +9,7 @@ In this page we will share instructions for installing WSL2 on Winodws 10/11 and
   - For detail steps, follow these [instructions](https://learn.microsoft.com/en-us/windows/wsl/install) at [https://learn.microsoft.com](https://learn.microsoft.com/en-us/windows/wsl)
   - https://kwantaekim.github.io/2024/05/25/OSE-Docker/#wsl
 - **Prerequisites**: Winodws 10 version 2004+ (Build 19041+) or Windows 11
-- **Enabling WSL** : `Control Panel -> Programs -> Programs and Features -> Turn Windows Features On and Off` and **Select** `Windows Subsystem for Linux`  (This is a good [video](https://kwantaekim.github.io/2024/05/25/OSE-Docker/#wsl) for it.)
+- **Enabling WSL** : `Control Panel -> Programs -> Programs and Features -> Turn Windows Features On and Off` and **Select** `Windows Subsystem for Linux`  (This is a good [video](https://kwantaekim.github.io/2024/05/25/OSE-Docker/#wsl) for it. **NOTE** Do not follow this video to install distribution which it suggests to do through MS Store)
 - If you have a previous WSL installed without your knowledge or, you've installed in from the _Microsoft Store_, it's best you **uninstall** it using the Windows "Add/remove Programs" app and/or `wsl --uninstall`
   - Some resources to [Uninstall legacy version of WSL](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#uninstall-legacy-version-of-wsl) or [unregister or uninstall a Linux distribution](https://learn.microsoft.com/en-us/windows/wsl/basic-commands#unregister-or-uninstall-a-linux-distribution).
 - It is also **highly recommended** to ensure **Virtualization (VTx)** is enabled in your BIOS. See [instructions here](https://www.laptopmag.com/articles/access-bios-windows-10) on how to access BIOS in a modern Windows 10 workstation/laptop. 
