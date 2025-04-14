@@ -17,7 +17,7 @@ In this page we will share instructions for installing WSL2 on Winodws 10/11 and
 - In the PowerShell type `wsl --list --online`
   - This will list all the available distributions online. 
 - To install a particular distribution (Distro) say `Ubuntu-22.04` (The name has to be exactly as printed in the above command):
-  - `wsl --install -d Ubuntu-22.04`
+  - `wsl --install -d Ubuntu-24.04`
   - You'll be asked to create an **username** and **password**. Keep the password safe which you need for all _root_ activities.
     - This account will be your default _user_ for the distribution and automatically sign-in on launch.
     - This account will be considered the Linux administrator, with the ability to run *sudo* (Super User Do) administrative commands.
