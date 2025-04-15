@@ -60,7 +60,7 @@ Once the WSL is setup, we are now ready to install the open source EDA tools. Al
     - You can find an example code and it's testbench [here](https://github.com/silicon-vlsi/VLSI-2024).
 
 ---
-
+&copy; 2025 Silicon University, Odisha  
 
 * * *
 
