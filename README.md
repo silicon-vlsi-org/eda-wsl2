@@ -43,7 +43,7 @@ In this page we will share instructions for installing WSL2 on Winodws 10/11 and
 ;disable GPU in system-distro
 LIBGL_ALWAYS_SOFTWARE=1
 ```
-## Install Open Source EDA Tools
+## Install Open Source Verilog EDA Tools
 Once the WSL is setup, we are now ready to install the open source EDA tools. All the tools (except sue2) is available on Ubuntu 22.04 distro that you can install by simply typing `sudo apt install <toolName>`. We will install **Icarus Verilog** `iverilog` 
  and **GTKWave** `gtkwave` from the distro itself since it is pretty close to the latest release. For the rest of the tools, we have compiled version for *Ubuntu 22.04* on github that we are going to use to get the latest version.
 
@@ -58,10 +58,19 @@ Once the WSL is setup, we are now ready to install the open source EDA tools. Al
     - `vvp tb_mydut.vvp` : Convert the compiled output to a VCD format for GTKWave.
     - `gtkwave dump.vcd` : Note: the filename `dump.vcd` is assumed to be in `tb_mydut.v`
     - You can find an example code and it's testbench [here](https://github.com/silicon-vlsi/VLSI-2024).
-- [**NGSPICE**](https://github.com/silicon-vlsi-org/eda-ngspice): See Download and Setup instruction in the [gitHub page](https://github.com/silicon-vlsi-org/eda-ngspice#downloading-&-setting-up-ngspice).
-- [**Sue2+**](https://github.com/silicon-vlsi-org/eda-sue2Plus): See the instructions here on download and setup of schematic editor sue2+.
-- [**MAGIC**](https://github.com/silicon-vlsi-org/eda-magic): See Download and Setup instruction in the [gitHub page](https://github.com/silicon-vlsi-org/eda-magic#downloading-&-setting-up-magic)
-- [**NETGEN**](https://github.com/silicon-vlsi-org/eda-netgen): See Download and Setup instruction in the [gitHub page](https://github.com/silicon-vlsi-org/eda-netgen#downloading-&-setting-up-netgen)
-- [**TECHNOLOGY**](https://github.com/silicon-vlsi-org/eda-technology): See Download and Setup instruction in the [gitHub page](https://github.com/silicon-vlsi-org/eda-technology)
+
+---
+
+
+* * *
+
+[OpenRAM]:              https://openram.soe.ucsc.edu/
+[OpenRAMgit]:           https://github.com/VLSIDA/OpenRAM 
+[OpenRAMpaper]:         https://ieeexplore.ieee.org/document/7827670/
+[SCMOS]:                https://www.mosis.com/files/scmos/scmos.pdf
+[NGSpice]:              http://ngspice.sourceforge.net
+[NGSpiceMan]:           http://ngspice.sourceforge.net/docs/ngspice-html-manual/manual.xhtml
+[Magic]:                http://opencircuitdesign.com/magic/
+[Netgen]:               http://opencircuitdesign.com/netgen/
 
 
